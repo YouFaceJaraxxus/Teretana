@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="Teretana.FeeDetailView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Teretana"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Style="{ThemeResource ResourceKey=PageStyle}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="800">
+            <TextBlock Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Fee info}" FontSize="50px" Height="70" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="3">
+            <Button Name="backButton" Click="backButton_Click" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30 20 0 0" Width="50" Height="50">
+                <SymbolIcon Symbol="Back"></SymbolIcon>
+            </Button>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="idBlock" Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource ID}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="idValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="memberIdBlock" Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Member id}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="memberIdValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="nameBlock" Margin="0 0 0 0" Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Name}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="nameValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="lastNameBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Last name}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="lastNameValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="dateBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Pay date}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="dateValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="priceBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Price}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="priceValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="actualPriceBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Actual price}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="actualPriceValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="discountBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Discount}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="discountValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Image Name="feeImage" VerticalAlignment="Center" HorizontalAlignment="Center" Width="512" Height="512" Source="/Assets/fee_icon.png"></Image>
+        </StackPanel>
+    </Grid>
+</Page>

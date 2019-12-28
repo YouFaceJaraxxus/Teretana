@@ -1,0 +1,178 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <!--global-->
+    <x:String x:Key="Change language">Change language</x:String>
+    <x:String x:Key="Change theme">Change theme</x:String>
+    <x:String x:Key="Notification">Notification</x:String>
+    <x:String x:Key="Please restart app to make changes.">Please restart app to make changes.</x:String>
+    <x:String x:Key="Cancel">Cancel</x:String>
+    <x:String x:Key="OK">OK</x:String>
+    <x:String x:Key="Error">Error</x:String>
+    <x:String x:Key="Yes">Yes</x:String>
+    <x:String x:Key="No">No</x:String>
+    <x:String x:Key="Gender">Gender</x:String>
+    <x:String x:Key="Male">Male</x:String>
+    <x:String x:Key="Female">Female</x:String>
+    <x:String x:Key="Logout">Logout</x:String>
+    <x:String x:Key="Active">Active</x:String>
+    <x:String x:Key="Inactive">Inactive</x:String>
+    <x:String x:Key="Price">Price</x:String>
+    <x:String x:Key="None">None</x:String>
+    <x:String x:Key="Operation successful">Operation successful.</x:String>
+    <x:String x:Key="From">From</x:String>
+    <x:String x:Key="Duration">Duration</x:String>
+    <x:String x:Key="Error loading file">Error loading file.</x:String>
+    <x:String x:Key="Error retrieving data">Error retrieving data.</x:String>
+    <x:String x:Key="State">State</x:String>
+    <x:String x:Key="Date">Date</x:String>
+
+    <!-- MainPage-->
+    <x:String x:Key="Enter username">Username:</x:String>
+    <x:String x:Key="Enter password">Password:</x:String>
+    <x:String x:Key="Username placeholder">Enter username</x:String>
+    <x:String x:Key="Password placeholder">Enter password</x:String>
+    <x:String x:Key="Login">Login</x:String>
+    <x:String x:Key="Invalid credentials">Invalid credentials.</x:String>
+    <x:String x:Key="This will be your starting user data">This will be your starting user data:</x:String>
+    <x:String x:Key="The username field can't be empty">The username field can't be empty.</x:String>
+    <x:String x:Key="The password field can't be empty">The password field can't be empty.</x:String>
+    <x:String x:Key="The user account has been disabled">The user account has been disabled.</x:String>
+
+
+    <!-- TrainerView-->
+    <x:String x:Key="Training sessions">Training sessions</x:String>
+    <x:String x:Key="Members">Members</x:String>
+    <x:String x:Key="Product sale">Product sale</x:String>
+    <x:String x:Key="Dark theme">Dark theme</x:String>
+    <x:String x:Key="Light theme">Light theme</x:String>
+    <x:String x:Key="Blue theme">Blue theme</x:String>
+
+    <!--MembersView-->
+    <x:String x:Key="Add member">Add member</x:String>
+    <x:String x:Key="Edit">Edit</x:String>
+    <x:String x:Key="Prolong membership">Prolong membership</x:String>
+    <x:String x:Key="Activate">Activate</x:String>
+    <x:String x:Key="Deactivate">Deactivate</x:String>
+    <x:String x:Key="Add session">Add session</x:String>
+    <x:String x:Key="End session">End session</x:String>
+    <x:String x:Key="Details">Details</x:String>
+    <x:String x:Key="The membership can only be extended up to three days before expiration">The membership can only be extended up to three days before expiration.</x:String>
+    <x:String x:Key="The member's membership has expired">The member's membership has expired.</x:String>
+    <x:String x:Key="The member is inactive">The member is inactive.</x:String>
+    <x:String x:Key="The member is not training at the moment">The member is not training at the moment.</x:String>
+    <x:String x:Key="The member has already trained today">The member has already trained today.</x:String>
+    <x:String x:Key="The today's session has already been logged">The today's session has already been logged.</x:String>
+    <x:String x:Key="Search">Search</x:String>
+
+    <!--AddMemberView-->
+    <x:String x:Key="Enter name">Enter name</x:String>
+    <x:String x:Key="Name placeholder">Name</x:String>
+    <x:String x:Key="Enter last name">Enter last name</x:String>
+    <x:String x:Key="Last name placeholder">Last name</x:String>
+    <x:String x:Key="Enter JMB">Enter Personal ID</x:String>
+    <x:String x:Key="JMB placeholder">Personal ID</x:String>
+    <x:String x:Key="Birth date">Birth date</x:String>
+    <x:String x:Key="The name field can't be empty">The name field can't be empty.</x:String>
+    <x:String x:Key="The last name field can't be empty">The last name field can't be empty.</x:String>
+    <x:String x:Key="The JMB field must have 13 characters">The personal ID field must have 13 characters.</x:String>
+    <x:String x:Key="Please pick a date">Please pick a date.</x:String>
+    <x:String x:Key="Members must be at least 12 years old">Members must be at least 12 years old.</x:String>
+    <x:String x:Key="There is already a member with the same personal ID">There is already a member with the same personal ID.</x:String>
+    <x:String x:Key="Add Image">Add Image</x:String>
+
+
+    <!--MemberDetailView-->
+    <x:String x:Key="Member info">Member info</x:String>
+    <x:String x:Key="ID">ID</x:String>
+    <x:String x:Key="Name">Name</x:String>
+    <x:String x:Key="Last name">Last name</x:String>
+    <x:String x:Key="JMB">Personal ID</x:String>
+    <x:String x:Key="Membership type">Membership type</x:String>
+    <x:String x:Key="Join date">Join date</x:String>
+    <x:String x:Key="Until date">Until date</x:String>
+
+    <!--EditMemberView-->
+    <x:String x:Key="Edit member">Edit member</x:String>
+    <x:String x:Key="Set image">Set image</x:String>
+
+
+    <!--UsersView-->
+    <x:String x:Key="Membership types">Membership types</x:String>
+    <x:String x:Key="Users">Users</x:String>
+    <x:String x:Key="Add user">Add user</x:String>
+    <x:String x:Key="Admin">Admin</x:String>
+    <x:String x:Key="Trainer">Trainer</x:String>
+    <x:String x:Key="Select user type">Select user type</x:String>
+    <x:String x:Key="There is already a user with the same username">There is already a user with the same username.</x:String>
+    <x:String x:Key="The master user cannot be activated or deactivated">The master user cannot be activated or deactivated.</x:String>
+    <x:String x:Key="Edit user">Edit user</x:String>
+
+    <!--MembershipTypesView-->
+    <x:String x:Key="Add membership type">Add membership type</x:String>
+
+    <!--AddMembershipTypeMenu-->
+    <x:String x:Key="Enter price">Enter price</x:String>
+    <x:String x:Key="Price placeholder">Price</x:String>
+    <x:String x:Key="The price field can't be empty">The price field can't be empty.</x:String>
+    <x:String x:Key="Invalid number input">Invalid number input.</x:String>
+    <x:String x:Key="There is already a membership type with the same name">There is already a membership type with the same name.</x:String>
+
+    <!--EditMembershipTypeMenu-->
+    <x:String x:Key="Edit membership type">Edit membership type</x:String>
+
+    <!--ProlongMembershipMenu-->
+    <x:String x:Key="Select membership type">Select membership type</x:String>
+    <x:String x:Key="Until">Until</x:String>
+    <x:String x:Key="Select number of months">Select number of months</x:String>
+    <x:String x:Key="You must select a type of membership">You must select a type of membership.</x:String>
+    <x:String x:Key="You must select a number of months">You must select a number of months.</x:String>
+    <x:String x:Key="You cannot prolong the membership any longer">You cannot prolong the membership any longer.</x:String>
+
+    <!--TrainingSessionsView-->
+    <x:String x:Key="In progress">In progress</x:String>
+    <x:String x:Key="Finished">Finished</x:String>
+    <x:String x:Key="Refresh">Refresh</x:String>
+    <x:String x:Key="This session has already been logged">This session has already been logged</x:String>
+    <x:String x:Key="Session info">Session info</x:String>
+
+    <!--SalesView-->
+    <x:String x:Key="Add product">Add product</x:String>
+    <x:String x:Key="Edit product">Edit product</x:String>
+    <x:String x:Key="Buy product">Buy product</x:String>
+    <x:String x:Key="Sell product">Sell product</x:String>
+    <x:String x:Key="Buy">Buy</x:String>
+    <x:String x:Key="Sell">Sell</x:String>
+
+    <!--AddProductMenu-->
+    <x:String x:Key="Type">Type</x:String>
+    <x:String x:Key="Equipment">Equipment</x:String>
+    <x:String x:Key="Supplement">Supplement</x:String>
+    <x:String x:Key="There is already a product with the same name">There is already a product with the same name.</x:String>
+
+    <!--BuySellView-->
+    <x:String x:Key="Remove">Remove</x:String>
+    <x:String x:Key="Clear">Clear</x:String>
+    <x:String x:Key="Set">Set</x:String>
+    <x:String x:Key="Amount placeholder">Amount</x:String>
+    <x:String x:Key="You do not posess as many items of that kind as you entered">You do not posess as many items of that kind as you entered.</x:String>
+    <x:String x:Key="No items were added to the list">No items were added to the list.</x:String>
+    
+
+    <!--ProductDetailView-->
+    <x:String x:Key="Product info">Product info</x:String>
+
+    <!--FeeDetailView-->
+    <x:String x:Key="Fee info">Fee info</x:String>
+    <x:String x:Key="Member id">Member id</x:String>
+    <x:String x:Key="Pay date">Pay date</x:String>
+    <x:String x:Key="Actual price">Actual price</x:String>
+    <x:String x:Key="Discount">Discount</x:String>
+
+    <!--PurchaseDetailView-->
+    <x:String x:Key="Purchase info">Purchase info</x:String>
+    <x:String x:Key="Total">Total</x:String>
+</ResourceDictionary>
+

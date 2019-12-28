@@ -1,0 +1,175 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--global-->
+    <x:String x:Key="Change language">Jezik</x:String>
+    <x:String x:Key="Change theme">Boja pozadine</x:String>
+    <x:String x:Key="Notification">Notifikacija</x:String>
+    <x:String x:Key="Please restart app to make changes.">Restartuj aplikaciju da bi se sačuvala podešavanja.</x:String>
+    <x:String x:Key="Cancel">Otkaži</x:String>
+    <x:String x:Key="OK">OK</x:String>
+    <x:String x:Key="Error">Greška</x:String>
+    <x:String x:Key="Yes">Da</x:String>
+    <x:String x:Key="No">Ne</x:String>
+    <x:String x:Key="Gender">Pol</x:String>
+    <x:String x:Key="Male">Muški</x:String>
+    <x:String x:Key="Female">Ženski</x:String>
+    <x:String x:Key="Logout">Odjavi se</x:String>
+    <x:String x:Key="Active">Aktivan</x:String>
+    <x:String x:Key="Inactive">Neaktivan</x:String>
+    <x:String x:Key="Price">Cijena</x:String>
+    <x:String x:Key="None">Nijedan</x:String>
+    <x:String x:Key="Operation successful">Operacija uspješna.</x:String>
+    <x:String x:Key="From">Od</x:String>
+    <x:String x:Key="Duration">Trajanje</x:String>
+    <x:String x:Key="Error loading file">Greška pri učitavanju fajla.</x:String>
+    <x:String x:Key="Error retrieving data">Greška pri učitavanju podataka.</x:String>
+    <x:String x:Key="State">Stanje</x:String>
+    <x:String x:Key="Date">Datum</x:String>
+
+    <!-- MainPage-->
+    <x:String x:Key="Enter username">Korisničko ime:</x:String>
+    <x:String x:Key="Enter password">Lozinka:</x:String>
+    <x:String x:Key="Username placeholder">Unesi korisničko ime</x:String>
+    <x:String x:Key="Password placeholder">Unesi lozinku</x:String>
+    <x:String x:Key="Login">Uloguj se</x:String>
+    <x:String x:Key="Invalid credentials">Netačni korisnički podaci.</x:String>
+    <x:String x:Key="This will be your starting user data">Ovo će biti vaši početni korisnički podaci: </x:String>
+    <x:String x:Key="The username field can't be empty">Polje za korisničko ime ne može biti prazno.</x:String>
+    <x:String x:Key="The password field can't be empty">Polje za lozinku ne može biti prazno.</x:String>
+    <x:String x:Key="The user account has been disabled">Korisnički nalog je deaktiviran.</x:String>
+
+
+    <!-- TrainerView-->
+    <x:String x:Key="Training sessions">Sesije</x:String>
+    <x:String x:Key="Members">Članovi</x:String>
+    <x:String x:Key="Product sale">Prodaja</x:String>
+    <x:String x:Key="Dark theme">Tamna pozadina</x:String>
+    <x:String x:Key="Light theme">Svijetla pozadina</x:String>
+    <x:String x:Key="Blue theme">Plava pozadina</x:String>
+
+    <!--MembersView-->
+    <x:String x:Key="Add member">Dodaj člana</x:String>
+    <x:String x:Key="Edit">Izmijeni</x:String>
+    <x:String x:Key="Prolong membership">Produži članarinu</x:String>
+    <x:String x:Key="Activate">Aktiviraj</x:String>
+    <x:String x:Key="Deactivate">Deaktiviraj</x:String>
+    <x:String x:Key="Add session">Dodaj sesiju</x:String>
+    <x:String x:Key="End session">Prekini sesiju</x:String>
+    <x:String x:Key="Details">Detaljnije</x:String>
+    <x:String x:Key="The membership can only be extended up to three days before expiration">Članstvo se može produžiti najviše tri dana prije isteka.</x:String>
+    <x:String x:Key="The member's membership has expired">Članarina člana je istekla.</x:String>
+    <x:String x:Key="The member is inactive">Član nije aktivan.</x:String>
+    <x:String x:Key="The member is not training at the moment">Član ne trenira trenutno.</x:String>
+    <x:String x:Key="The member has already trained today">Član je već trenirao danas.</x:String>
+    <x:String x:Key="The today's session has already been logged">Članova današnja sesija je već logovana.</x:String>
+    <x:String x:Key="Search">Pretraga</x:String>
+
+    <!--AddMemberView-->
+    <x:String x:Key="Enter name">Unesi ime</x:String>
+    <x:String x:Key="Name placeholder">Ime</x:String>
+    <x:String x:Key="Enter last name">Unesi prezime</x:String>
+    <x:String x:Key="Last name placeholder">Prezime</x:String>
+    <x:String x:Key="Enter JMB">Unesi JMB</x:String>
+    <x:String x:Key="JMB placeholder">JMB</x:String>
+    <x:String x:Key="Birth date">Datum rođenja</x:String>
+    <x:String x:Key="The name field can't be empty">Ime ne može biti prazno polje.</x:String>
+    <x:String x:Key="The last name field can't be empty">Prezime ne može biti prazno polje.</x:String>
+    <x:String x:Key="The JMB field must have 13 characters">JMB polje mora imati 13 znakova</x:String>
+    <x:String x:Key="Please pick a date">Molimo odaberite datum.</x:String>
+    <x:String x:Key="Members must be at least 12 years old">Članovi moraju imati bar 12 godina.</x:String>
+    <x:String x:Key="There is already a member with the same personal ID">Već postoji član sa istim JMB.</x:String>
+    <x:String x:Key="Add Image">Dodaj sliku</x:String>
+
+    <!--MemberDetailView-->
+    <x:String x:Key="Member info">Informacije o članu</x:String>
+    <x:String x:Key="ID">ID</x:String>
+    <x:String x:Key="Name">Ime</x:String>
+    <x:String x:Key="Last name">Prezime</x:String>
+    <x:String x:Key="JMB">JMB</x:String>
+    <x:String x:Key="Membership type">Tip članstva</x:String>
+    <x:String x:Key="Join date">Datum učlanjenja</x:String>
+    <x:String x:Key="Until date">Datum trajanja članstva</x:String>
+
+    <!--EditMemberView-->
+    <x:String x:Key="Edit member">Izmijeni člana</x:String>
+    <x:String x:Key="Set image">Postavi sliku</x:String>
+
+    <!--UsersView-->
+    <x:String x:Key="Membership types">Vrste članarina</x:String>
+    <x:String x:Key="Users">Korisnici</x:String>
+    <x:String x:Key="Add user">Dodaj korisnika</x:String>
+    <x:String x:Key="Admin">Admin</x:String>
+    <x:String x:Key="Trainer">Trener</x:String>
+    <x:String x:Key="Select user type">Odaberi tip korisnika</x:String>
+    <x:String x:Key="There is already a user with the same username">Već postoji korisnik sa istim korisničkim imenom.</x:String>
+    <x:String x:Key="The master user cannot be activated or deactivated">Glavni korisnički nalog se ne može aktivirati ili deaktivirati.</x:String>
+    <x:String x:Key="Edit user">Izmijeni korisnika</x:String>
+
+    <!--MembershipTypesView-->
+    <x:String x:Key="Add membership type">Dodaj tip članstva</x:String>
+
+    <!--AddMembershipTypeMenu-->
+    <x:String x:Key="Enter price">Unesi cijenu</x:String>
+    <x:String x:Key="Price placeholder">Cijena</x:String>
+    <x:String x:Key="The price field can't be empty">Polje cijene ne može biti prazno.</x:String>
+    <x:String x:Key="Invalid number input">Unijeli ste neispravan broj.</x:String>
+    <x:String x:Key="There is already a membership type with the same name">Već postoji tip članstva sa istim imenom.</x:String>
+
+
+    <!--EditMembershipTypeMenu-->
+    <x:String x:Key="Edit membership type">Izmijeni tip članstva</x:String>
+
+    <!--ProlongMembershipMenu-->
+    <x:String x:Key="Select membership type">Odaberi tip članstva</x:String>
+    <x:String x:Key="Until">Do</x:String>
+    <x:String x:Key="Select number of months">Odaberi broj mjeseci</x:String>
+    <x:String x:Key="You must select a type of membership">Morate odabrati tip članstva.</x:String>
+    <x:String x:Key="You must select a number of months">Morate odabrati broj mjeseci.</x:String>
+    <x:String x:Key="You cannot prolong the membership any longer">Ne možete više produžiti članstvo za ovog člana.</x:String>
+
+    <!--TrainingSessionsView-->
+    <x:String x:Key="In progress">U toku</x:String>
+    <x:String x:Key="Finished">Završen</x:String>
+    <x:String x:Key="Refresh">Osvježi</x:String>
+    <x:String x:Key="This session has already been logged">Ova sesija je već logovana.</x:String>
+    <x:String x:Key="Session info">Informacije o sesiji</x:String>
+    
+    <!--SalesView-->
+    <x:String x:Key="Add product">Dodaj proizvod</x:String>
+    <x:String x:Key="Edit product">Izmijeni proizvod</x:String>
+    <x:String x:Key="Buy product">Kupi proizvod</x:String>
+    <x:String x:Key="Sell product">Prodaj proizvod</x:String>
+    <x:String x:Key="Buy">Kupi</x:String>
+    <x:String x:Key="Sell">Prodaj</x:String>
+
+    <!--AddProductMenu-->
+    <x:String x:Key="Type">Tip</x:String>
+    <x:String x:Key="Equipment">Oprema</x:String>
+    <x:String x:Key="Supplement">Suplement</x:String>
+    <x:String x:Key="There is already a product with the same name">Već postoji proizvod sa istim imenom.</x:String>
+    
+    <!--BuySellView-->
+    <x:String x:Key="Remove">Ukloni</x:String>
+    <x:String x:Key="Clear">Očisti</x:String>
+    <x:String x:Key="Set">Setuj</x:String>
+    <x:String x:Key="Amount placeholder">Količina</x:String>
+    <x:String x:Key="You do not posess as many items of that kind as you entered">Nemate toliko proizvoda tog tipa kao što ste unijeli.</x:String>
+    <x:String x:Key="No items were added to the list">Niste dodali nijedan artikal u listu.</x:String>
+
+    <!--ProductDetailView-->
+    <x:String x:Key="Product info">Informacije o proizvodu</x:String>
+    
+    <!--FeeDetailView-->
+    <x:String x:Key="Fee info">Članarina</x:String>
+    <x:String x:Key="Member id">Id člana</x:String>
+    <x:String x:Key="Pay date">Datum plaćanja</x:String>
+    <x:String x:Key="Actual price">Prava cijena</x:String>
+    <x:String x:Key="Discount">Popust</x:String>
+
+    <!--PurchaseDetailView-->
+    <x:String x:Key="Purchase info">Purchase info</x:String>
+    <x:String x:Key="Total">Ukupno</x:String>
+</ResourceDictionary>
+

@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="Teretana.EditMembershipTypeMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Teretana"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Style="{ThemeResource ResourceKey=PageStyle}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Height="70" Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Edit membership type}" FontSize="50px"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="3">
+            <Button x:ConnectionId='5'  Name="backButton"                          VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30 20 0 0" Width="50" Height="50">
+                <SymbolIcon Symbol="Back"></SymbolIcon>
+            </Button>
+            <TextBlock x:ConnectionId='6' VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="nameBlock"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter name}"></TextBlock>
+            <TextBox x:ConnectionId='7' VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="nameBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource Name placeholder}"></TextBox>
+            <TextBlock x:ConnectionId='8' VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="priceBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter price}"></TextBlock>
+            <TextBox x:ConnectionId='9' VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="priceBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource Price placeholder}"></TextBox>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Image x:ConnectionId='4' Name="memberImage" VerticalAlignment="Center" HorizontalAlignment="Center" Width="512" Height="512" Source="/Assets/dumbbell_icon.png"></Image>
+        </StackPanel>
+        <Button x:ConnectionId='2' Grid.Row="3" Grid.Column="2" x:Name="cancelButton" Style="{ThemeResource ResourceKey=ButtonStyle}"  Width="200" Height="35" VerticalAlignment="Center" HorizontalAlignment="Center"                            Content="{StaticResource Cancel}"/>
+        <Button x:ConnectionId='3' Grid.Row="3" Grid.Column="1" x:Name="okButton" Style="{ThemeResource ResourceKey=ButtonStyle}"  Width="200" Height="35" VerticalAlignment="Center" HorizontalAlignment="Center"                        Content="{StaticResource OK}"/>
+    </Grid>
+</Page>
+

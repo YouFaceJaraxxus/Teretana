@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="Teretana.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Teretana"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Style="{ThemeResource ResourceKey=PageStyle}">
+    
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="151*"></ColumnDefinition>
+            <ColumnDefinition Width="169*"></ColumnDefinition>
+            <ColumnDefinition Width="160*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"></RowDefinition>
+            <RowDefinition Height="120*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Image Source="Assets/main_background_image.jpg" Stretch="Fill"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <TextBlock x:ConnectionId='7' VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="usernameBlock" Margin="0 10 0 0" Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter username}"></TextBlock>
+            <TextBox x:ConnectionId='8' VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="usernameBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource Username placeholder}"></TextBox>
+            <TextBlock x:ConnectionId='9' VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="passwordBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter password}"></TextBlock>
+            <PasswordBox x:ConnectionId='10' VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="passwordBox" Margin="0 0 0 20" Style="{ThemeResource ResourceKey=PasswordBoxStyle}" PlaceholderText="{StaticResource Password placeholder}"></PasswordBox>
+            <Button x:ConnectionId='11' Style="{StaticResource ButtonStyle}" VerticalAlignment="Center" Width="400" Name="mainOkButton"                          HorizontalAlignment="Center">OK</Button>
+        </StackPanel>
+        <Grid Grid.Row="0" Grid.Column="2" Width="200" HorizontalAlignment="Right">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"></RowDefinition>
+                <RowDefinition Height="20*"></RowDefinition>
+                <RowDefinition Height="10*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button x:ConnectionId='2' Name="englishButton"  VerticalAlignment="Center" HorizontalAlignment="Right"                            Padding="0" BorderThickness="0" Width="60" Height="30" Grid.Row="1" Grid.Column="0">
+                <Image Source="Assets/english.png" Stretch="Fill"/>
+            </Button>
+            <Button x:ConnectionId='3' Name="serbianButton"  VerticalAlignment="Center" HorizontalAlignment="Right"                            Padding="0" BorderThickness="0" Width="60" Height="30" Grid.Row="1" Grid.Column="1">
+                <Image Source="Assets/serbian.jpg" Stretch="Fill"/>
+            </Button>
+            <Button VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="50" Grid.Row="1"  Grid.Column="2">
+                <SymbolIcon Symbol="Setting"></SymbolIcon>
+                <Button.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutSubItem  Text="{StaticResource Change theme}">
+                            <MenuFlyoutItem x:ConnectionId='4' x:Name="DarkThemeOption" Text="{StaticResource Dark theme}"                              />
+                            <MenuFlyoutItem x:ConnectionId='5' x:Name="LightThemeOption" Text="{StaticResource Light theme}"                               />
+                            <MenuFlyoutItem x:ConnectionId='6' x:Name="BlueThemeOption" Text="{StaticResource Blue theme}"                              />
+                        </MenuFlyoutSubItem>
+                    </MenuFlyout>
+                </Button.Flyout>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Page>
+

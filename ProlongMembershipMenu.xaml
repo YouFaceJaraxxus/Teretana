@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="Teretana.ProlongMembershipMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Teretana"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Style="{ThemeResource ResourceKey=PageStyle}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Height="70" Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Prolong membership}" FontSize="50px"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="3">
+            <Button Name="backButton" Click="backButton_Click" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30 20 0 0" Width="50" Height="50">
+                <SymbolIcon Symbol="Back"></SymbolIcon>
+            </Button>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="idBlock" Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource ID}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="idValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="nameBlock" Margin="0 0 0 0" Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Name}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="nameValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="lastNameBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Last name}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="lastNameValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="genderBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Gender}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="genderValueBlock" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="JoinedDateBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Join date}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="JoinedDateValueBlock" Margin="0 0 0 10"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="membershipTypeBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Membership type}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="membershipTypeValueBlock" Margin="0 0 0 10"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="activeBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Active}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="activeValueBlock"  Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="untilBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Until}" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="untilValueBlock"  Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBlockStyle}" Foreground="LightGreen" FontSize="20"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="membershipTypeChoiceBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Select membership type}" FontSize="20"></TextBlock>
+            <ComboBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" x:Name="membershipTypeChoiceBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=ComboBoxStyle}"></ComboBox>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="numberOfMonthsBlock" Margin="0 0 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Select number of months}" FontSize="20"></TextBlock>
+            <ComboBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" x:Name="numberOfMonthsBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=ComboBoxStyle}"></ComboBox>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Image Name="memberImage" VerticalAlignment="Center" HorizontalAlignment="Center" Width="512" Height="512"></Image>
+        </StackPanel>
+        <Button Grid.Row="3" Grid.Column="2" x:Name="cancelButton" Style="{ThemeResource ResourceKey=ButtonStyle}"  Width="200" Height="35" VerticalAlignment="Center" HorizontalAlignment="Center" Click="cancelButton_Click" Content="{StaticResource Cancel}"/>
+        <Button Grid.Row="3" Grid.Column="1" x:Name="okButton" Style="{ThemeResource ResourceKey=ButtonStyle}"  Width="200" Height="35" VerticalAlignment="Center" HorizontalAlignment="Center" Click="okButton_Click" Content="{StaticResource OK}"/>
+    </Grid>
+</Page>

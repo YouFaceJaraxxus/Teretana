@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="Teretana.EditMemberMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Teretana"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Style="{ThemeResource ResourceKey=PageStyle}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Height="70" Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Edit member}" FontSize="50px"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="3">
+            <Button  Name="backButton" Click="backButton_Click" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30 20 0 0" Width="50" Height="50">
+                <SymbolIcon Symbol="Back"></SymbolIcon>
+            </Button>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="nameBlock"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter name}"></TextBlock>
+            <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="nameBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource Name placeholder}" LostFocus="nameBox_LostFocus"></TextBox>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="lastNameBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter last name}"></TextBlock>
+            <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="lastNameBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource Last name placeholder}" LostFocus="lastNameBox_LostFocus"></TextBox>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="JMBBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter JMB}"/>
+            <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="JMBBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource JMB placeholder}"></TextBox>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="genderBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Gender}"></TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <RadioButton Name="maleButton" Content="{StaticResource Male}" GroupName="Gender" Tag="Male"/>
+                <RadioButton Name="femaleButton" Content="{StaticResource Female}" GroupName="Gender" Tag="Female"/>
+            </StackPanel>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="BirthDateBlock" Margin="0 10 0 10"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Birth date}"></TextBlock>
+            <CalendarView Margin="0 0 0 10" x:Name="BirthDateCalendar" VerticalAlignment="Center" HorizontalAlignment="Center" SelectionMode="Single"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Image Name="memberImage" VerticalAlignment="Center" HorizontalAlignment="Center" Width="512" Height="512"></Image>
+        </StackPanel>
+        <Button Grid.Row="3" Grid.Column="0" x:Name="addImageButton" Style="{ThemeResource ResourceKey=ButtonStyle}"  Width="200" Height="35" VerticalAlignment="Center" HorizontalAlignment="Center" Click="addImageButton_Click" Content="{StaticResource Set image}"/>
+        <Button Grid.Row="3" Grid.Column="2" x:Name="cancelButton" Style="{ThemeResource ResourceKey=ButtonStyle}"  Width="200" Height="35" VerticalAlignment="Center" HorizontalAlignment="Center" Click="cancelButton_Click" Content="{StaticResource Cancel}"/>
+        <Button Grid.Row="3" Grid.Column="1" x:Name="okButton" Style="{ThemeResource ResourceKey=ButtonStyle}"  Width="200" Height="35" VerticalAlignment="Center" HorizontalAlignment="Center" Click="okButton_Click" Content="{StaticResource OK}"/>
+    </Grid>
+</Page>
