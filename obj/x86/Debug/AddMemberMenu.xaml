@@ -27,13 +27,13 @@
             <Button x:ConnectionId='6'  Name="backButton"                          VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30 20 0 0" Width="50" Height="50">
                 <SymbolIcon Symbol="Back"></SymbolIcon>
             </Button>
-            <TextBlock x:ConnectionId='7' VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="nameBlock"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter name}"></TextBlock>
+            <TextBlock x:ConnectionId='7' VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="nameBlock"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter name}"></TextBlock>
             <TextBox x:ConnectionId='8' VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="nameBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource Name placeholder}"                              ></TextBox>
-            <TextBlock x:ConnectionId='9' VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="lastNameBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter last name}"></TextBlock>
+            <TextBlock x:ConnectionId='9' VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="lastNameBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter last name}"></TextBlock>
             <TextBox x:ConnectionId='10' VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="lastNameBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource Last name placeholder}"                                  ></TextBox>
-            <TextBlock x:ConnectionId='11' VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="JMBBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter JMB}"/>
+            <TextBlock x:ConnectionId='11' VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="JMBBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter JMB}"/>
             <TextBox x:ConnectionId='12' VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="JMBBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource JMB placeholder}"></TextBox>
-            <TextBlock x:ConnectionId='13' VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="genderBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Gender}"></TextBlock>
+            <TextBlock x:ConnectionId='13' VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="genderBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Gender}"></TextBlock>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <RadioButton x:ConnectionId='16' Name="maleButton" Content="{StaticResource Male}" GroupName="Gender" Tag="Male" IsChecked="True"/>
                 <RadioButton x:ConnectionId='17' Name="femaleButton" Content="{StaticResource Female}" GroupName="Gender" Tag="Female"/>

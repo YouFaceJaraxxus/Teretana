@@ -95,8 +95,8 @@ namespace Teretana
                 }
                 else
                 {
-                    products = db.Products.Where(p => p.Id.ToString().Contains(query) || p.name.Contains(query)).ToList();
-                    fees = db.MembershipFees.Include(f => f.member).Where(f => f.Id.ToString().Contains(query) || f.member.name.Contains(query) || f.member.lastName.Contains(query)).ToList();
+                    products = db.Products.Where(p => p.Id.ToString().ToLower().Contains(query) || p.name.ToLower().Contains(query)).ToList();
+                    fees = db.MembershipFees.Include(f => f.member).Where(f => f.Id.ToString().Contains(query) || f.member.name.ToLower().Contains(query) || f.member.lastName.ToLower().Contains(query)).ToList();
                     purchases = db.Purchases.Where(p => p.Id.ToString().Contains(query)).ToList();
                 }
             }

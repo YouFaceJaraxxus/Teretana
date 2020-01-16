@@ -44,7 +44,15 @@ namespace Teretana
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            this.id = (int)e.Parameter;
+            try
+            {
+
+                this.id = (int)e.Parameter;
+            }
+            catch(Exception ex)
+            {
+                this.id = Int32.Parse((string)e.Parameter);
+            }
             using (var db = new AppDBContext())
             {
                 try

@@ -27,13 +27,13 @@
             <Button  Name="backButton" Click="backButton_Click" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30 20 0 0" Width="50" Height="50">
                 <SymbolIcon Symbol="Back"></SymbolIcon>
             </Button>
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="nameBlock"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter name}"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="nameBlock"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter name}"></TextBlock>
             <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="nameBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource Name placeholder}" LostFocus="nameBox_LostFocus"></TextBox>
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="lastNameBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter last name}"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="lastNameBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter last name}"></TextBlock>
             <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="lastNameBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource Last name placeholder}" LostFocus="lastNameBox_LostFocus"></TextBox>
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="JMBBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter JMB}"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="JMBBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Enter JMB}"/>
             <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Name="JMBBox" Margin="0 0 0 10" Style="{ThemeResource ResourceKey=TextBoxStyle}" PlaceholderText="{StaticResource JMB placeholder}"></TextBox>
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="genderBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Gender}"></TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Name="genderBlock" Margin="0 10 0 0"  Style="{ThemeResource ResourceKey=TextBlockStyle}" Text="{StaticResource Gender}"></TextBlock>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <RadioButton Name="maleButton" Content="{StaticResource Male}" GroupName="Gender" Tag="Male" IsChecked="True"/>
                 <RadioButton Name="femaleButton" Content="{StaticResource Female}" GroupName="Gender" Tag="Female"/>

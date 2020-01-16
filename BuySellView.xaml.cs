@@ -101,6 +101,7 @@ namespace Teretana
                     removeButton.IsEnabled = false;
                     MessageDialog messageDialog = new MessageDialog((Application.Current.Resources["Operation successful"] as string), (Application.Current.Resources["Notification"] as string));
                     messageDialog.ShowAsync();
+                    TrainerMenu.trainerMenuFrame.Navigate(typeof(SalesView));
                     return;
                 }
             }
